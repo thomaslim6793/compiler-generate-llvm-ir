@@ -1,0 +1,8 @@
+# a complex logic function/predicate
+
+def dnf_instance(x, y, z):
+    (let check_type = isbool(x) && isbool(y) && isbool(z) in
+    (if check_type: (!(x) && y && z) || (x && !(y) && !(z)) || (x && !(y) && z)
+    else: false))
+
+dnf_instance(false, true, true) && dnf_instance(true, false, false) && dnf_instance(true, false, true)

@@ -1,0 +1,7 @@
+def f1(x, y):
+    (let x1 = 3 in
+    (let x2 = 4 in
+    x + y + x1 + x2))
+def f2(x, y):
+    (let x1 = 3 in f1(x, y + x1))
+f2(1, 2)

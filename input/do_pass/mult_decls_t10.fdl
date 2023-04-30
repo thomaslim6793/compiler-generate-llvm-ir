@@ -1,0 +1,4 @@
+def f1(x, y): x + y def f2(x, y): x * y
+(let x = (let x = f1(2, 3), y = f2(4, 5) in x + y) in (let z = 6 in f2(z, f2(f1(2, 3), f2(2, 2))) + x))
+
+

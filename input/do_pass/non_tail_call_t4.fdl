@@ -1,0 +1,9 @@
+def f1(x):
+    if x < 1: 1
+    else: f1(x - 1) * 2
+
+def f2(x):
+    if x < 1: 1
+    else: f1(x - 1) + 1
+
+f1(5)

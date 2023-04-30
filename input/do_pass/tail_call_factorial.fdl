@@ -1,0 +1,4 @@
+def fact(n, accum):
+    if n < 1: accum
+    else: fact(n - 1, accum * n)
+fact(4, 1)

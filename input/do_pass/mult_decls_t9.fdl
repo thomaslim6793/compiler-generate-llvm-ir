@@ -1,0 +1,2 @@
+def f1(x, y): (let z = (x && (3 < y)) in (let a = 4 in (a > y) || z)) def f2(x, y): (if !(x): 3 else: y + 3)
+f2(f1(true, 4), 5)

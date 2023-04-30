@@ -1,0 +1,1 @@
+def foo(x): 1 def bar(x): 2 (foo(0) + bar(0))

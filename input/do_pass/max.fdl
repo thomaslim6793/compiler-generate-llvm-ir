@@ -1,0 +1,5 @@
+def max(x, y):
+  if y >= x: y
+  else: max(y, x)
+
+max(20, 10) == max(10, 20)

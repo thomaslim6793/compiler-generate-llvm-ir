@@ -1,0 +1,2 @@
+def f1(x, y): if (x > y): x + 1 else: y + 1 def f2(y, x): (let x2 = 5, y2 = (let x3 = 3 in x + 3) in x - y2)
+(let x = 1, y = 2, z = 3 in f1(x, z) + (let shadow x = 4, shadow y = 11 in z * f2(x, y)))

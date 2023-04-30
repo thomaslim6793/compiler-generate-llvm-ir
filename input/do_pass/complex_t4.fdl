@@ -1,0 +1,9 @@
+def square(x):
+    x * x
+def max(x, y):
+    if x >= y: x
+    else: max(y, x)
+def composite(x1, x2):
+    max(square(x1), square(x2))
+
+print(composite(-3, 3)) + composite(4, 5) 

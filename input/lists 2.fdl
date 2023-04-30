@@ -1,0 +1,29 @@
+def link(first, rest):
+  (first, rest)
+
+def length(l):
+  if l == nil: 0
+  else:
+    1 + length(l[1])
+
+def sum(l):
+  if l == nil: 0
+  else:
+    l[0] + sum(l[1])
+
+def reverse(l, acc):
+  if l == nil: acc
+  else:
+    reverse(l[1], link(l[0], acc))
+
+def append(l1, l2):
+  if l1 == nil: l2
+  else:
+    link(l1[0], append(l1[1], l2))
+
+let mylist1=link(1, link(2, link(3, nil))), mylist2=link(4, link(5, link(6, nil))) in
+  print(sum(mylist1)) ; print(reverse(mylist1, nil)) ;
+  append(mylist1, mylist2)
+
+# This is an incomplete program, so it doesn't parse yet...
+

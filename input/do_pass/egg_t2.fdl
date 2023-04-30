@@ -1,0 +1,6 @@
+# Tests:
+# 1) function input can be a tuple. 
+# new feature to test) tuple can be returned
+def f1(x1, (x2, (x3, x4), x5)):
+    (x1 + x2 + x3 + x4 + x5)
+let x = f1(1, (2, (3,4), 5)) in (x, 1)

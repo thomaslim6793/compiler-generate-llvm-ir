@@ -1,0 +1,2 @@
+def f1(x, y): print(x) + print(y) def f2(x, y): print(x + y)
+f2(f1(1, 2), f1(3, 4))

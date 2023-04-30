@@ -1,0 +1,2 @@
+def f1(x): x def f2(x, y): x > y def f3(x, y, z): x * y + z 
+(let x = 2, y = 3, z = 4 in (if f2(x, y):f1(x) else: f3(x, y, z))) 

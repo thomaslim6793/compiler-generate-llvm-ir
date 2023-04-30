@@ -1,0 +1,6 @@
+def sum(x, acc):
+  let a=1,b=2,c=3,d=4,e=5,f=6 in
+  if x < 1: acc
+  else: sum(x - 1, acc + x) + 0
+
+sum(100000, 0)

@@ -1,0 +1,10 @@
+def f1(x):
+    isnum(x)
+def f2(x):
+    if x: 1
+    else: 2
+def f3(x):
+    (let x1 = 10 in
+     x1 > x)
+
+f3(f2(f1(1)))

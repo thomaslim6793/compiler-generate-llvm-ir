@@ -1,0 +1,26 @@
+# This test checks:
+# 1) function input can be a tuple. 
+# 2) return tuple
+# 3) tail-recursion works
+# 4) Sequences:
+#   1) check that last expression is the return value
+#   2) check that sequences are executed in left -> right order
+#   3) check that sequences can be arguments of any operation.
+# 5) Tuples:
+#   1) test Evaluation order for tuple.
+#   2) make sure our existing checks for boolean-tagged values in if continue to work for tuples.
+
+def f1(x1, (x2, (x3, x4), x5)):
+    if x5 >= 10: (x2, (x3, x4), x5) 
+    else: f1(x1, (x2, (x3, x4), x5 + 1))
+
+def f2(y1, (y2, y3)):
+    if y1 > y2: y3
+    else: false
+
+let b1 = (true; f1(1, (1, (1, 1), 1)); 1) + (let x = 2 in (x, 3); 2) in
+let t1 = (true, 1, (2, 3)) in 
+if t1[0]: 1 else: 2
+
+# output:
+# 1

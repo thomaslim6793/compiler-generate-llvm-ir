@@ -1,0 +1,5 @@
+def f1(x, y): 
+    x + y 
+def f2(x, y): 
+    f1(x, y) + 2 
+f2(1, 2)
