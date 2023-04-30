@@ -35,3 +35,8 @@ How to run:
 1) Create a source file like the examples I gave above, e.g. sample.fdl
 2) Run the following command: >> make sample.run
 3) Execute the program: ./sample.run
+
+
+* This is a finals project for course Compilers (course code: CS6410) at Northeastern University, taught by professor Ben Lerner.
+The starter codes of this project were provided by Ben Lerner. 
+* Collaborators: Spencer Rhodes, Ryan Bride.
